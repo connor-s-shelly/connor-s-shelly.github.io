@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connor Shelly - Portfolio</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/portfolio_icon.png">
-    
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
@@ -20,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Connor Shelly</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,7 +40,6 @@
     <!-- Experience & Education Section -->
     <section id="experience" class="container py-5 bg-white rounded-3 shadow-sm mb-5 border-top border-primary border-3">
         <div class="row px-4 pt-3">
-            <!-- Left Column: Experience -->
             <div class="col-md-6 mb-4 mb-md-0">
                 <h3 class="mb-4 text-primary">Experience</h3>
                 <div class="mb-4">
@@ -67,7 +61,6 @@
                 </div>
             </div>
 
-            <!-- Right Column: Education -->
             <div class="col-md-6">
                 <h3 class="mb-4 text-primary">Education & Certifications</h3>
                 <div class="mb-4">
@@ -95,10 +88,9 @@
         </div>
     </section>
 
-    <!-- Projects Container -->
     <div id="projects">
         
-        <!-- Project 1: Great Lakes Basin Climate & Invasion Risk Modeling -->
+        <!-- Project 1: Climate Risk -->
         <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm">
             <h2 class="mb-3 border-bottom pb-2 px-4 pt-3 text-primary">Project: Great Lakes Basin Climate & Invasion Risk Modeling</h2>
             <p class="lead text-muted mb-4 px-4">Analyzing how projected climate change and shifting thermal regimes alter the invasion risk profile of the Laurentian Great Lakes Basin.</p>
@@ -124,7 +116,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="assets/climate/GreatLakesBasin_InsetMap.jpg" class="card-img-top p-2" alt="Regional Basin Context">
+                        <img src="assets/climate/GreatLakesBasin_InsetMap.jpg" class="card-img-top p-2" alt="Regional Context">
                         <div class="card-body border-top">
                             <h5 class="card-title text-primary">Regional Context</h5>
                             <p class="card-text text-muted small">Basin boundary with continental context and inner watershed delineations.</p>
@@ -145,10 +137,10 @@
             </div>
         </section>
 
-        <!-- Project 2: Cisco Restoration & AIS Threats in Lake Erie -->
+        <!-- Project 2: Cisco Restoration -->
         <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm">
             <h2 class="mb-3 border-bottom pb-2 px-4 pt-3 text-primary">Project: Cisco Restoration & AIS Threats</h2>
-            <p class="lead text-muted mb-4 px-4">An assessment of the threats aquatic invasive species pose to the restoration of Cisco (Coregonus artedi) in Lake Erie, supporting the Coregonine Restoration Framework.</p>
+            <p class="lead text-muted mb-4 px-4">An assessment of the threats aquatic invasive species pose to the restoration of Cisco in Lake Erie.</p>
             
             <div class="row g-4 px-4 pb-4">
                 <div class="col-md-6">
@@ -176,7 +168,7 @@
             </div>
         </section>
 
-        <!-- Project 3: USCRP Habitat Modeling & Spatial Analysis -->
+        <!-- Project 3: USCRP Habitat Modeling -->
         <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm">
             <h2 class="mb-3 border-bottom pb-2 px-4 pt-3 text-primary">Project: USCRP Habitat Modeling</h2>
             <p class="lead text-muted mb-4 px-4">Spatial mapping, suitability indexing, and 10-year forecasting to identify and track critical habitat refugia against invasive species pressures.</p>
@@ -317,10 +309,31 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Restored VHSV Data -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/AEU/VHS_CorrectPredictions_Updated.jpg" class="card-img-top p-2" alt="VHSV AEU">
+                        <div class="card-body border-top">
+                            <h5 class="card-title text-primary">VHSV (AEU)</h5>
+                            <p class="card-text text-muted small">Correctly predicted AEU occurrences for the VHS Virus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/Nearest_Neighbor/VHS_NearestNeighbor.jpg" class="card-img-top p-2" alt="VHSV Neighbor">
+                        <div class="card-body border-top">
+                            <h5 class="card-title text-primary">VHSV Spread</h5>
+                            <p class="card-text text-muted small">Nearest neighbor spread predictions.</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
-        <!-- Project 5: State of the Great Lakes (SOGL) & Top 10 Analysis -->
+        <!-- Project 5: SOGL & Top 10 Analysis -->
         <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm">
             <h2 class="mb-3 border-bottom pb-2 px-4 pt-3 text-primary">Project: State of the Great Lakes (SOGL) & Top 10 Analysis</h2>
             <p class="lead text-muted mb-4 px-4">Evaluating historical introduction vectors, concentrated hot-spots, and the comprehensive demographic impact of the Top 10 invasive species across the basin.</p>
@@ -344,6 +357,18 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Restored Impact Scores -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/top_10/ImpactScores.jpg" class="card-img-top p-2" alt="Impact Scores">
+                        <div class="card-body border-top">
+                            <h5 class="card-title text-primary">Impact Scores Distribution</h5>
+                            <p class="card-text text-muted small">Histogram detailing frequency of specific impact scores.</p>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
                         <img src="assets/SOGL/SOGL_HUC8_NumberOfIntroductions_HighQuality.jpg" class="card-img-top p-2" alt="HUC 8 Introduction Density">
@@ -362,9 +387,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-12">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="assets/top_10/Top%2010%20Table.JPG" class="card-img-top p-2" alt="Top 10 Table">
+                        <img src="assets/top_10/Top%2010%20Table.JPG" class="card-img-top p-2" alt="Top 10 Table" style="object-fit: cover;">
                         <div class="card-body border-top">
                             <h5 class="card-title text-primary">The Top 10 List</h5>
                             <p class="card-text text-muted small">Tabular breakdown of the ten most impactful species.</p>
@@ -499,7 +524,7 @@
             </div>
         </section>
 
-    </div> <!-- End Projects Container -->
+    </div> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
