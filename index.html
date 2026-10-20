@@ -1,43 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- This links your HTML to your CSS file -->
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Your custom CSS overrides go below Bootstrap -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <nav>
-        <h2>MyName</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyName</a>
+        </div>
     </nav>
 
-    <header id="about">
-        <h1>Hi, I'm [Your Name]</h1>
-        <p>I'm a developer building things for the web.</p>
+    <!-- Main Header -->
+    <header class="container text-center py-5">
+        <h1 class="display-4 fw-bold">Hi, I'm a Developer & Researcher</h1>
+        <p class="lead text-muted">Welcome to my interactive portfolio.</p>
+        <!-- Bootstrap button linking to your PDF -->
+        <a href="assets/resume.pdf" target="_blank" class="btn btn-primary btn-lg mt-3 shadow-sm">
+            View My Resume
+        </a>
     </header>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Project One</h3>
-            <p>A description of the first thing I built.</p>
-            <a href="#">View Code</a>
+    <!-- Education & Research Section -->
+    <section class="container py-5 bg-light rounded-3 shadow-sm mb-5">
+        <div class="row px-4">
+            
+            <!-- Left Column: Education -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h3 class="mb-4 text-primary">Education</h3>
+                
+                <div class="mb-3">
+                    <h5 class="fw-bold mb-1">M.S. in Data Science</h5>
+                    <p class="text-muted mb-1">University of Technology | 2022 - 2024</p>
+                    <p>Focus on spatial analysis, machine learning, and interactive data visualization.</p>
+                </div>
+                
+                <div class="mb-3">
+                    <h5 class="fw-bold mb-1">B.S. in Computer Science</h5>
+                    <p class="text-muted mb-1">State University | 2018 - 2022</p>
+                    <p>Minor in Geographic Information Systems (GIS).</p>
+                </div>
+            </div>
+
+            <!-- Right Column: Research Experience -->
+            <div class="col-md-6">
+                <h3 class="mb-4 text-primary">Research Experience</h3>
+                
+                <div class="mb-3">
+                    <h5 class="fw-bold mb-1">Graduate Research Assistant</h5>
+                    <p class="text-muted mb-1">Urban Analytics Lab | Aug 2023 - Present</p>
+                    <ul>
+                        <li>Analyzed city transit data to identify high-traffic corridors.</li>
+                        <li>Developed automated python scripts to clean spatial datasets.</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-3">
+                    <h5 class="fw-bold mb-1">Undergraduate Researcher</h5>
+                    <p class="text-muted mb-1">Climate Modeling Group | May 2021 - May 2022</p>
+                    <ul>
+                        <li>Assisted in building story maps for public climate awareness.</li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
-        <div class="project-card">
-            <h3>Project Two</h3>
-            <p>A description of the second thing I built.</p>
-            <a href="#">View Code</a>
+    </section>
+
+    <!-- Project Grid -->
+    <section class="container py-4 mb-5">
+        <h2 class="mb-4 border-bottom pb-2">Featured Projects</h2>
+        
+        <div class="row g-4">
+            <!-- Project 1: Image -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <!-- Ensure project-map.png is uploaded to your assets folder -->
+                    <img src="assets/project-map.png" class="card-img-top" alt="Project map">
+                    <div class="card-body">
+                        <h5 class="card-title">Mapping Analysis</h5>
+                        <p class="card-text">A spatial analysis project showing regional trends.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Embedded Dashboard -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <!-- Embed iframe right inside the card -->
+                    <div class="ratio ratio-16x9">
+                        <!-- Replace src link with your actual dashboard embed link -->
+                        <iframe src="https://public.tableau.com/views/YourDashboardLink" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Interactive Dashboard</h5>
+                        <p class="card-text">Live data visualization built with Tableau.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
 </body>
-
 </html>
