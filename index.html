@@ -3,108 +3,598 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Connor Shelly - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/portfolio_icon.png">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Your custom CSS overrides go below Bootstrap -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">MyName</a>
+            <a class="navbar-brand fw-bold" href="#">Connor Shelly</a>
         </div>
     </nav>
 
-    <!-- Main Header -->
+    <!-- Main Header with Headshot -->
     <header class="container text-center py-5">
-        <h1 class="display-4 fw-bold">Hi, I'm a Developer & Researcher</h1>
-        <p class="lead text-muted">Welcome to my interactive portfolio.</p>
-        <!-- Bootstrap button linking to your PDF -->
-        <a href="assets/resume.pdf" target="_blank" class="btn btn-primary btn-lg mt-3 shadow-sm">
+        <img src="assets/Connor Shelly_Headshot_HiRes.jpg" alt="Connor Shelly" class="rounded-circle mb-4 shadow-sm" style="width: 200px; height: 200px; object-fit: cover; border: 5px solid white;">
+        <h1 class="display-4 fw-bold">Hi, I'm Connor Shelly</h1>
+        <p class="lead text-muted">GIS & Data Analytics Professional</p>
+        <a href="assets/Resume_CShelly_GIS.pdf" target="_blank" class="btn btn-primary btn-lg mt-3 shadow-sm">
             View My Resume
         </a>
     </header>
 
-    <!-- Education & Research Section -->
-    <section class="container py-5 bg-light rounded-3 shadow-sm mb-5">
-        <div class="row px-4">
-            
-            <!-- Left Column: Education -->
+    <!-- Experience & Education Section -->
+    <section class="container py-5 bg-white rounded-3 shadow-sm mb-5 border-top">
+        <div class="row px-4 pt-3">
+            <!-- Left Column: Experience -->
             <div class="col-md-6 mb-4 mb-md-0">
-                <h3 class="mb-4 text-primary">Education</h3>
-                
-                <div class="mb-3">
-                    <h5 class="fw-bold mb-1">M.S. in Data Science</h5>
-                    <p class="text-muted mb-1">University of Technology | 2022 - 2024</p>
-                    <p>Focus on spatial analysis, machine learning, and interactive data visualization.</p>
+                <h3 class="mb-4 text-primary">Experience</h3>
+                <div class="mb-4">
+                    <h5 class="fw-bold mb-1">Web Developer & GIS Specialist</h5>
+                    <p class="text-muted mb-2">GLANSIS, Michigan Sea Grant | Jan 2024 - Present</p>
+                    <ul class="text-secondary">
+                        <li>Execute spatial analyses with the ArcGIS Suite to support decision making for government agencies.</li>
+                        <li>Develop and maintain websites and web-based tools using HTML, CSS, and JavaScript.</li>
+                        <li>Deliver research on complex geospatial data to diverse audiences.</li>
+                    </ul>
                 </div>
-                
                 <div class="mb-3">
-                    <h5 class="fw-bold mb-1">B.S. in Computer Science</h5>
-                    <p class="text-muted mb-1">State University | 2018 - 2022</p>
-                    <p>Minor in Geographic Information Systems (GIS).</p>
+                    <h5 class="fw-bold mb-1">Data Associate</h5>
+                    <p class="text-muted mb-2">GLANSIS, Michigan Sea Grant | Jan 2023 - Jan 2024</p>
+                    <ul class="text-secondary">
+                        <li>Managed data for educational products and provided technical support to improve web and GIS tools.</li>
+                        <li>Synthesized complex information to produce accessible educational materials.</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Right Column: Research Experience -->
+            <!-- Right Column: Education -->
             <div class="col-md-6">
-                <h3 class="mb-4 text-primary">Research Experience</h3>
-                
-                <div class="mb-3">
-                    <h5 class="fw-bold mb-1">Graduate Research Assistant</h5>
-                    <p class="text-muted mb-1">Urban Analytics Lab | Aug 2023 - Present</p>
-                    <ul>
-                        <li>Analyzed city transit data to identify high-traffic corridors.</li>
-                        <li>Developed automated python scripts to clean spatial datasets.</li>
-                    </ul>
+                <h3 class="mb-4 text-primary">Education & Certifications</h3>
+                <div class="mb-4">
+                    <h5 class="fw-bold mb-1">B.S. in Fisheries and Wildlife Sciences</h5>
+                    <p class="text-muted mb-1">Oregon State University | 2022</p>
+                    <p class="text-secondary">Specialization in Ecosystem Analytics.</p>
                 </div>
-                
+                <div class="mb-4">
+                    <h5 class="fw-bold mb-1">Geographic Information Systems (GIS)</h5>
+                    <p class="text-muted mb-1">UC Davis | 2021</p>
+                    <p class="text-secondary">Specialization Certification.</p>
+                </div>
                 <div class="mb-3">
-                    <h5 class="fw-bold mb-1">Undergraduate Researcher</h5>
-                    <p class="text-muted mb-1">Climate Modeling Group | May 2021 - May 2022</p>
-                    <ul>
-                        <li>Assisted in building story maps for public climate awareness.</li>
-                    </ul>
+                    <h5 class="fw-bold mb-1">Technical Skills</h5>
+                    <p class="text-secondary mt-2">
+                        <span class="badge bg-secondary me-1">ArcGIS Suite</span>
+                        <span class="badge bg-secondary me-1">Python</span>
+                        <span class="badge bg-secondary me-1">R</span>
+                        <span class="badge bg-secondary me-1">SQL</span>
+                        <span class="badge bg-secondary me-1">HTML/CSS</span>
+                        <span class="badge bg-secondary">JavaScript</span>
+                    </p>
                 </div>
             </div>
-            
         </div>
     </section>
 
-    <!-- Project Grid -->
-    <section class="container py-4 mb-5">
-        <h2 class="mb-4 border-bottom pb-2">Featured Projects</h2>
-        
-        <div class="row g-4">
-            <!-- Project 1: Image -->
-            <div class="col-md-6">
+    <!-- USCRP Data Visualizations & Modeling Section -->
+    <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm">
+        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">Habitat Modeling & Spatial Analysis</h2>
+        <div class="row g-4 px-4 pb-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0">
-                    <!-- Ensure project-map.png is uploaded to your assets folder -->
-                    <img src="assets/project-map.png" class="card-img-top" alt="Project map">
-                    <div class="card-body">
-                        <h5 class="card-title">Mapping Analysis</h5>
-                        <p class="card-text">A spatial analysis project showing regional trends.</p>
+                    <img src="assets/USCRP/AIS_Impact.jpg" class="card-img-top p-2" alt="AIS Impact Distribution">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">AIS Impact Distribution</h5>
+                        <p class="card-text text-muted small">Spatial impact scores mapped for Yellow Perch, Walleye, and Lake Whitefish.</p>
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/USCRP/HSI_Layout_V1.jpg" class="card-img-top p-2" alt="Habitat Suitability Index">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Habitat Suitability Index (HSI)</h5>
+                        <p class="card-text text-muted small">Baseline suitability mapping comparing optimal environments for key species.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/USCRP/Refugia_Index.jpg" class="card-img-top p-2" alt="Refugia Index">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Refugia Index</h5>
+                        <p class="card-text text-muted small">Identification of critical habitat refugia resistant to invasive species pressures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/USCRP/Chart1_BasinWide_Trajectory.png" class="card-img-top p-2" alt="Core Refugia Loss Trajectory">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Core Refugia Loss Trajectory</h5>
+                        <p class="card-text text-muted small">A 10-year forecast comparing worst-case and constrained habitat loss.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/USCRP/Sensitivity_Plot1_Area_Decay.jpg" class="card-img-top p-2" alt="Refugia Sensitivity Analysis">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Refugia Sensitivity Analysis</h5>
+                        <p class="card-text text-muted small">Area loss tracking across Liberal, Moderate, and Strict scenario thresholds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/USCRP/Sensitivity_Plot3_Habitat_Squeeze.png" class="card-img-top p-2" alt="The Habitat Squeeze">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">The 'Habitat Squeeze'</h5>
+                        <p class="card-text text-muted small">Comparative analysis of potential habitat versus actual refugia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Project 2: Embedded Dashboard -->
+    <!-- Aquatic Ecological Unit (AEU) Analysis Section -->
+    <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm border-top">
+        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">Aquatic Ecological Unit (AEU) Analysis</h2>
+        <div class="row g-4 px-4 pb-4">
             <div class="col-md-6">
                 <div class="card h-100 shadow-sm border-0">
-                    <!-- Embed iframe right inside the card -->
-                    <div class="ratio ratio-16x9">
-                        <!-- Replace src link with your actual dashboard embed link -->
-                        <iframe src="https://public.tableau.com/views/YourDashboardLink" allowfullscreen></iframe>
+                    <img src="assets/AEU/BL_All_Points_All_AEUs.jpg" class="card-img-top p-2" alt="Spiny Waterflea Observations">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Spiny Waterflea: Observations</h5>
+                        <p class="card-text text-muted small">Distribution points across all AEUs.</p>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Interactive Dashboard</h5>
-                        <p class="card-text">Live data visualization built with Tableau.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/AEU/BL_CorrectPredictions_Updated.jpg" class="card-img-top p-2" alt="Spiny Waterflea Predictions">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Spiny Waterflea: Predictions</h5>
+                        <p class="card-text text-muted small">Correctly predicted AEU occurrences.</p>
                     </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/AEU/GC_Points_and_AEUs.jpg" class="card-img-top p-2" alt="Golden Clam AEU Points">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Golden Clam: Observations</h5>
+                        <p class="card-text text-muted small">Distribution points across AEUs for Corbicula fluminea.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/AEU/GC_Correct_Predictions.jpg" class="card-img-top p-2" alt="Golden Clam AEU Predictions">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Golden Clam: Predictions</h5>
+                        <p class="card-text text-muted small">Correctly predicted AEU occurrences for the Golden Clam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/AEU/NM_All_AEUs_All_Points.jpg" class="card-img-top p-2" alt="Round Goby AEU Points">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Round Goby: Observations</h5>
+                        <p class="card-text text-muted small">Distribution points across AEUs for Neogobius melanostomus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/AEU/NM_CorrectPredictions_Updated.jpg" class="card-img-top p-2" alt="Round Goby AEU Predictions">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Round Goby: Predictions</h5>
+                        <p class="card-text text-muted small">Correctly predicted AEU occurrences for the Round Goby.</p>
+                    </div>
+            </div>
+        </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/AEU/PC_Points_and_AEUs.jpg" class="card-img-top p-2" alt="Curly-leaf Pondweed AEU Points">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Curly-leaf Pondweed: Observations</h5>
+                        <p class="card-text text-muted small">Distribution points across AEUs for Potamogeton crispus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/AEU/PC_Correct_Predictions.jpg" class="card-img-top p-2" alt="Curly-leaf Pondweed AEU Predictions">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Curly-leaf Pondweed: Predictions</h5>
+                        <p class="card-text text-muted small">Correctly predicted AEU occurrences for Curly-leaf Pondweed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/AEU/VHS_Points_and_AEUs.jpg" class="card-img-top p-2" alt="VHSV AEU Points">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">VHSV: Observations</h5>
+                        <p class="card-text text-muted small">Distribution points across AEUs for the Viral Hemorrhagic Septicemia Virus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/AEU/VHS_CorrectPredictions_Updated.jpg" class="card-img-top p-2" alt="VHSV AEU Predictions">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">VHSV: Predictions</h5>
+                        <p class="card-text text-muted small">Correctly predicted AEU occurrences for the Viral Hemorrhagic Septicemia Virus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearest Neighbor Analysis Section -->
+    <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm border-top">
+        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">Nearest Neighbor Analysis</h2>
+        <div class="row g-4 px-4 pb-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/Nearest_Neighbor/BL_NearestNeighbor.jpg" class="card-img-top p-2" alt="Spiny Waterflea">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Spiny Waterflea</h5>
+                        <p class="card-text text-muted small">Nearest neighbor spread predictions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/Nearest_Neighbor/CF_NearestNeighbor.jpg" class="card-img-top p-2" alt="Golden Clam">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Golden Clam</h5>
+                        <p class="card-text text-muted small">Nearest neighbor spread predictions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/Nearest_Neighbor/NM_NearestNeighbor.jpg" class="card-img-top p-2" alt="Round Goby">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Round Goby</h5>
+                        <p class="card-text text-muted small">Nearest neighbor spread predictions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/Nearest_Neighbor/PC_NearestNeighbor.jpg" class="card-img-top p-2" alt="Curly-leaf Pondweed">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Curly-leaf Pondweed</h5>
+                        <p class="card-text text-muted small">Nearest neighbor spread predictions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/Nearest_Neighbor/VHS_NearestNeighbor.jpg" class="card-img-top p-2" alt="VHSV">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">VHSV</h5>
+                        <p class="card-text text-muted small">Nearest neighbor spread predictions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Climate & Basin Maps Section -->
+    <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm border-top">
+        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">Regional Climate & Basin Maps</h2>
+        <div class="row g-4 px-4 pb-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/climate/Climate_V2_HighRes.jpg" class="card-img-top p-2" alt="Climate Projections: 2050">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Climate Projections: 2050</h5>
+                        <p class="card-text text-muted small">Projected species distribution changes by 2050.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/climate/GreatLakesBasin_Inset_V2.jpg" class="card-img-top p-2" alt="Basin Shorelines">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Great Lakes Basin Shorelines</h5>
+                        <p class="card-text text-muted small">Detailed mapping of the Basin boundary.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/climate/GreatLakesBasin_InsetMap.jpg" class="card-img-top p-2" alt="Regional Basin Context">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Regional Basin Context</h5>
+                        <p class="card-text text-muted small">Basin boundary with continental context.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/Great_Lakes_Basin_Map.jpg" class="card-img-top p-2" alt="Great Lakes Basin Map">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Great Lakes Basin Watersheds</h5>
+                        <p class="card-text text-muted small">Detailed map of the watersheds feeding into the Great Lakes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/PartnerMap_Points_Final.jpg" class="card-img-top p-2" alt="Partner Map">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Michigan Sea Grant Partner Map</h5>
+                        <p class="card-text text-muted small">Geospatial distribution of organizational partnerships.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- State of the Great Lakes (SOGL) Introductions Section -->
+    <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm border-top">
+        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">Species Introductions (SOGL)</h2>
+        <div class="row g-4 px-4 pb-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/SOGL/SOGL_HUC8_Introductions_HighQuality.jpg" class="card-img-top p-2" alt="HUC 8 Introductions">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">HUC 8 Introductions</h5>
+                        <p class="card-text text-muted small">Point map showing introductions across HUC 8 watersheds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/SOGL/SOGL_HUC8_NumberOfIntroductions_HighQuality.jpg" class="card-img-top p-2" alt="HUC 8 Introduction Density">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">HUC 8 Introduction Density</h5>
+                        <p class="card-text text-muted small">Choropleth mapping of species introductions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/SOGL/SOGL_IntroductionSites_HighQuality.jpg" class="card-img-top p-2" alt="Introduction Sites">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Introduction Sites</h5>
+                        <p class="card-text text-muted small">Historical timeline of species introduction sites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/SOGL/SOGL_IntroductionSites_Accessible_HQ.jpg" class="card-img-top p-2" alt="Accessible Introduction Sites">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Introduction Sites (Accessible)</h5>
+                        <p class="card-text text-muted small">Color-blind friendly version of the historical sites map.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/SOGL/SOGL_PointDensity_HighQuality.jpg" class="card-img-top p-2" alt="Point Density">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Point Density</h5>
+                        <p class="card-text text-muted small">Map highlighting concentrated areas of introductions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 10 Invasive Species Analysis Section -->
+    <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm border-top">
+        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">Top 10 Invasive Species Analysis</h2>
+        <div class="row g-4 px-4 pb-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/top_10/Great Lakes Aquatic Invasive Species_Large.jpg" class="card-img-top p-2" alt="Distribution Map">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Invasive Species Distribution</h5>
+                        <p class="card-text text-muted small">Comprehensive mapping of aquatic invasive species occurrences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/top_10/ImpactScores.jpg" class="card-img-top p-2" alt="Impact Scores">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Impact Score Distribution</h5>
+                        <p class="card-text text-muted small">Histogram detailing the frequency of specific impact scores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/top_10/pie_figure_new_enhanced.jpg" class="card-img-top p-2" alt="Demographics">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Demographics of Invasion</h5>
+                        <p class="card-text text-muted small">Comparisons of all invasive species vs. the Top 10 by origin, taxa, and vector.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/top_10/Top 10 Table.JPG" class="card-img-top p-2" alt="Top 10 Table">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">The Top 10 List</h5>
+                        <p class="card-text text-muted small">Tabular breakdown of the ten most impactful species.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TGLL Watershed & School Maps Section -->
+    <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm border-top">
+        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">TGLL Watershed & School Maps</h2>
+        <div class="row g-4 px-4 pb-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/TGLL_Maps/All_ANS_OttawaStony.jpg" class="card-img-top p-2" alt="Ottawa-Stony Watershed">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Ottawa-Stony Watershed</h5>
+                        <p class="card-text text-muted small">Distribution of aquatic nonindigenous species.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/TGLL_Maps/ANS_SE_MI_OttawaStony.jpg" class="card-img-top p-2" alt="SE MI Ottawa-Stony Plants">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">SE MI Ottawa-Stony Plants</h5>
+                        <p class="card-text text-muted small">Nonindigenous plant distribution in Southeast Michigan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/TGLL_Maps/Dossin_AllANS.jpg" class="card-img-top p-2" alt="Dossin All ANS">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Dossin: All ANS</h5>
+                        <p class="card-text text-muted small">Comprehensive map of species near Ernest J. Dossin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/TGLL_Maps/Dossin_ClusterMap.jpg" class="card-img-top p-2" alt="Dossin Cluster Map">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Dossin: Cluster Map</h5>
+                        <p class="card-text text-muted small">Cluster analysis of species near Ernest J. Dossin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/TGLL_Maps/Dossin_Fish.jpg" class="card-img-top p-2" alt="Dossin Fish">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Dossin: Fish</h5>
+                        <p class="card-text text-muted small">Distribution of nonindigenous fish near Ernest J. Dossin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/TGLL_Maps/Dossin_Mollusks.jpg" class="card-img-top p-2" alt="Dossin Mollusks">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Dossin: Mollusks</h5>
+                        <p class="card-text text-muted small">Distribution of nonindigenous mollusks near Ernest J. Dossin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/TGLL_Maps/Dossin_Plants.jpg" class="card-img-top p-2" alt="Dossin Plants">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Dossin: Plants</h5>
+                        <p class="card-text text-muted small">Distribution of nonindigenous plants near Ernest J. Dossin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/TGLL_Maps/Lincoln High School Map_Plants.jpg" class="card-img-top p-2" alt="Lincoln High School Plants">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Lincoln High School: Plants</h5>
+                        <p class="card-text text-muted small">Distribution of nonindigenous plants near Lincoln High School.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="assets/TGLL_Maps/Lincoln_BlackAlder.jpg" class="card-img-top p-2" alt="Lincoln Black Alder">
+                    <div class="card-body border-top">
+                        <h5 class="card-title text-primary">Lincoln High School: Black Alder</h5>
+                        <p class="card-text text-muted small">Distribution of Black Alder trees near Lincoln High School.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Risk Assessments Section -->
+    <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm border-top">
+        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">Publications & Risk Assessments</h2>
+        <div class="list-group list-group-flush px-4 pb-4">
+            <a href="assets/A Secondary Analysis of Invasion Risk.pdf" target="_blank" class="list-group-item list-group-item-action bg-transparent">
+                A Secondary Analysis of Invasion Risk
+            </a>
+            <a href="assets/Cherax_destructor_RA_20230719.pdf" target="_blank" class="list-group-item list-group-item-action bg-transparent">
+                Cherax destructor Risk Assessment
+            </a>
+            <a href="assets/Invasive Species Threats Assessment.pdf" target="_blank" class="list-group-item list-group-item-action bg-transparent">
+                Invasive Species Threats Assessment
+            </a>
+            <a href="assets/Limnoperna_fortunei_RA_20230725.pdf" target="_blank" class="list-group-item list-group-item-action bg-transparent">
+                Limnoperna fortunei Risk Assessment
+            </a>
+            <a href="assets/Procambarus_clarkii_OIA_2024.pdf" target="_blank" class="list-group-item list-group-item-action bg-transparent">
+                Procambarus clarkii Organism Impact Assessment (v1)
+            </a>
+            <a href="assets/Procambarus_clarkii_OIA_2024_2.pdf" target="_blank" class="list-group-item list-group-item-action bg-transparent">
+                Procambarus clarkii Organism Impact Assessment (v2)
+            </a>
+            <a href="assets/Procambarus_virginalis_RA_20231208.pdf" target="_blank" class="list-group-item list-group-item-action bg-transparent">
+                Procambarus virginalis Risk Assessment (v1)
+            </a>
+            <a href="assets/Procambarus_virginalis_RA_20231208_2.pdf" target="_blank" class="list-group-item list-group-item-action bg-transparent">
+                Procambarus virginalis Risk Assessment (v2)
+            </a>
+            <a href="assets/Summary Report.pdf" target="_blank" class="list-group-item list-group-item-action bg-transparent">
+                Summary Report
+            </a>
+        </div>
+    </section>
+
+    <!-- Articles & Outreach Section -->
+    <section class="container py-5 mb-5 bg-white rounded-3 shadow-sm border-top">
+        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">Articles & Outreach</h2>
+        <div class="row g-4 px-4 pb-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-3 bg-light">
+                    <h5 class="card-title text-primary">Marbled Crayfish Concerns</h5>
+                    <p class="card-text text-muted">Great Lakes Now feature on marbled crayfish.</p>
+                    <a href="assets/Marbled crayfish raises eyebrows, and concerns - Great Lakes Now.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-3 bg-light">
+                    <h5 class="card-title text-primary">Invasive Goldfish</h5>
+                    <p class="card-text text-muted">No silver lining: Invasive goldfish in the Great Lakes.</p>
+                    <a href="assets/No silver lining_ Invasive goldfish in the Great Lakes.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-3 bg-light">
+                    <h5 class="card-title text-primary">The Cloning Crayfish Conundrum</h5>
+                    <p class="card-text text-muted">A threat to the Great Lakes ecosystem.</p>
+                    <a href="assets/The cloning crayfish conundrum_ A threat to the Great Lakes ecosystem.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-3 bg-light">
+                    <h5 class="card-title text-primary">Unlocking the Mysteries of the Great Lakes</h5>
+                    <p class="card-text text-muted">Contribute to snail research and participatory science.</p>
+                    <a href="assets/Unlocking the mysteries of the Great Lakes_ Contribute to snail research.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
                 </div>
             </div>
         </div>
