@@ -109,7 +109,7 @@
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalCisco">
                     <div class="card-body">
                         <h5 class="card-title text-primary fw-bold">Cisco Restoration & AIS Threats</h5>
-                        <p class="card-text text-muted">An assessment of the threats aquatic invasive species pose to the restoration of Cisco in Lake Erie.</p>
+                        <p class="card-text text-muted">An assessment of the threats aquatic invasive species pose to the restoration of Cisco in Lake Erie. Features presentations from IAGLR.</p>
                         <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
                     </div>
                 </div>
@@ -128,8 +128,18 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalAEU">
                     <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">AEU & Nearest Neighbor Spread</h5>
-                        <p class="card-text text-muted">Comparing observed species distributions against predictive Aquatic Ecological Unit (AEU) modeling and spatial spread over time.</p>
+                        <h5 class="card-title text-primary fw-bold">AEU Predictive Modeling</h5>
+                        <p class="card-text text-muted">Comparing observed species distributions against predictive Aquatic Ecological Unit (AEU) modeling. Presented at IAGLR.</p>
+                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalNN">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary fw-bold">Nearest Neighbor Spread</h5>
+                        <p class="card-text text-muted">Spatial modeling of species spread across Great Lakes Basin HUC 8 watersheds over time. Presented at IAGLR.</p>
                         <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
                     </div>
                 </div>
@@ -251,6 +261,27 @@
                 </div>
                 <div class="modal-body bg-light">
                     <p class="lead mb-4">An assessment of the threats aquatic invasive species pose to the restoration of Cisco in Lake Erie, supporting the Coregonine Restoration Framework.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-12">
+                            <h5 class="border-bottom pb-2 text-primary">IAGLR Conference Presentations</h5>
+                            <p class="small text-muted">Research presented on how aquatic invasive species threaten the restoration of Cisco in Lake Erie[cite: 111, 112]. Geospatial analysis indicates that out of 2153.5 square miles of potential habitat, 444.97 square miles are notably affected by AIS[cite: 111]. Key species impacting Cisco include rainbow smelt, spiny waterflea, sea lamprey, bacterial kidney disease, and alewife[cite: 111].</p>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="./assets/IAGLR_Presentation_Coregonus.pptx" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3 h-100 shadow-sm">
+                                <h6 class="mb-1 text-primary fw-bold">IAGLR Presentation Slides (.pptx)</h6>
+                                <p class="mb-0 text-muted small">Restoring Coregonus artedi: Challenges Posed By Aquatic Invasive Species In Lake Erie.</p>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="./assets/IAGLR_Abstracts.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3 h-100 shadow-sm">
+                                <h6 class="mb-1 text-primary fw-bold">IAGLR Abstracts (.pdf)</h6>
+                                <p class="mb-0 text-muted small">Abstracts detailing research methodologies and spatial analysis findings.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <h5 class="border-bottom pb-2 text-primary">Project Reports</h5>
                     <div class="row g-4">
                         <div class="col-md-6">
                             <a href="./assets/Invasive%20Species%20Threats%20Assessment.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-4 h-100 shadow-sm">
@@ -311,55 +342,72 @@
         </div>
     </div>
 
-    <!-- Modal 4: AEU & Nearest Neighbor -->
+    <!-- Modal 4: AEU -->
     <div class="modal fade" id="modalAEU" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">AEU & Nearest Neighbor Spread Analysis</h5>
+                    <h5 class="modal-title">Aquatic Ecological Unit (AEU) Predictive Modeling</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
-                    <p class="lead mb-4">Comparing observed species distributions against predictive Aquatic Ecological Unit (AEU) modeling and Nearest Neighbor spatial spread over time.</p>
+                    <p class="lead mb-4">Comparing observed species distributions against predictive Aquatic Ecological Unit (AEU) modeling. This research was presented at the International Association for Great Lakes Research (IAGLR) conference.</p>
                     <div class="row g-4">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/BL_CorrectPredictions_Updated.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
                             <h6 class="mt-2 fw-bold text-primary">Spiny Waterflea (AEU Predictions)</h6>
                         </div>
-                        <div class="col-md-6">
-                            <img src="./assets/Nearest_Neighbor/BL_NearestNeighbor.jpg" class="img-fluid rounded shadow-sm border" alt="Spread">
-                            <h6 class="mt-2 fw-bold text-primary">Spiny Waterflea (Spread)</h6>
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/GC_Correct_Predictions.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
                             <h6 class="mt-2 fw-bold text-primary">Golden Clam (AEU Predictions)</h6>
                         </div>
-                        <div class="col-md-6">
-                            <img src="./assets/Nearest_Neighbor/CF_NearestNeighbor.jpg" class="img-fluid rounded shadow-sm border" alt="Spread">
-                            <h6 class="mt-2 fw-bold text-primary">Golden Clam (Spread)</h6>
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/NM_CorrectPredictions_Updated.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
                             <h6 class="mt-2 fw-bold text-primary">Round Goby (AEU Predictions)</h6>
                         </div>
-                        <div class="col-md-6">
-                            <img src="./assets/Nearest_Neighbor/NM_NearestNeighbor.jpg" class="img-fluid rounded shadow-sm border" alt="Spread">
-                            <h6 class="mt-2 fw-bold text-primary">Round Goby (Spread)</h6>
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/PC_Correct_Predictions.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
                             <h6 class="mt-2 fw-bold text-primary">Curly-leaf Pondweed (AEU Predictions)</h6>
                         </div>
-                        <div class="col-md-6">
-                            <img src="./assets/Nearest_Neighbor/PC_NearestNeighbor.jpg" class="img-fluid rounded shadow-sm border" alt="Spread">
-                            <h6 class="mt-2 fw-bold text-primary">Curly-leaf Pondweed (Spread)</h6>
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/VHS_CorrectPredictions_Updated.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
                             <h6 class="mt-2 fw-bold text-primary">VHS Virus (AEU Predictions)</h6>
                         </div>
-                        <div class="col-md-6">
-                            <img src="./assets/Nearest_Neighbor/VHS_NearestNeighbor.jpg" class="img-fluid rounded shadow-sm border" alt="Spread">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Nearest Neighbor -->
+    <div class="modal fade" id="modalNN" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Nearest Neighbor Spread Analysis</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <p class="lead mb-4">Spatial modeling of species spread across Great Lakes Basin HUC 8 watersheds over time. This research was presented at the International Association for Great Lakes Research (IAGLR) conference.</p>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <img src="./assets/Nearest_Neighbor/BL_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
+                            <h6 class="mt-2 fw-bold text-primary">Spiny Waterflea (Spread)</h6>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <img src="./assets/Nearest_Neighbor/CF_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
+                            <h6 class="mt-2 fw-bold text-primary">Golden Clam (Spread)</h6>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <img src="./assets/Nearest_Neighbor/NM_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
+                            <h6 class="mt-2 fw-bold text-primary">Round Goby (Spread)</h6>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <img src="./assets/Nearest_Neighbor/PC_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
+                            <h6 class="mt-2 fw-bold text-primary">Curly-leaf Pondweed (Spread)</h6>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <img src="./assets/Nearest_Neighbor/VHS_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
                             <h6 class="mt-2 fw-bold text-primary">VHS Virus (Spread)</h6>
                         </div>
                     </div>
@@ -368,7 +416,7 @@
         </div>
     </div>
 
-    <!-- Modal 5: SOGL -->
+    <!-- Modal 6: SOGL -->
     <div class="modal fade" id="modalSOGL" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
@@ -405,7 +453,7 @@
         </div>
     </div>
 
-    <!-- Modal 6: Top 10 Analysis -->
+    <!-- Modal 7: Top 10 Analysis -->
     <div class="modal fade" id="modalTop10" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
@@ -414,11 +462,16 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
-                    <p class="lead mb-4">A comprehensive demographic analysis of the ten most impactful species currently in the Great Lakes, featuring an interactive ArcGIS StoryMap.</p>
+                    <p class="lead mb-4">A comprehensive demographic analysis of the ten most impactful species currently in the Great Lakes, featuring an interactive ArcGIS StoryMap and Dashboard.</p>
                     
                     <!-- Embedded ArcGIS StoryMap -->
+                    <div class="ratio ratio-16x9 mb-4 rounded shadow-sm border">
+                        <iframe src="https://storymaps.arcgis.com/stories/d7d0d45321c94ffaa4d4eb94bd652bc8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Embedded ArcGIS Dashboard -->
                     <div class="ratio ratio-16x9 mb-5 rounded shadow-sm border">
-                        <iframe src="YOUR_STORYMAP_URL_HERE" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.arcgis.com/apps/dashboards/88853fe1acab4618a7b51e8a5d9e609d" frameborder="0" allowfullscreen></iframe>
                     </div>
 
                     <div class="row g-4">
@@ -444,7 +497,7 @@
         </div>
     </div>
 
-    <!-- Modal 7: Risk Assessments -->
+    <!-- Modal 8: Risk Assessments -->
     <div class="modal fade" id="modalRisk" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
@@ -477,7 +530,7 @@
         </div>
     </div>
 
-    <!-- Modal 8: TGLL Maps -->
+    <!-- Modal 9: TGLL Maps -->
     <div class="modal fade" id="modalTGLL" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
@@ -510,7 +563,7 @@
         </div>
     </div>
 
-    <!-- Modal 9: SciComm -->
+    <!-- Modal 10: SciComm -->
     <div class="modal fade" id="modalSciComm" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
@@ -520,33 +573,45 @@
                 </div>
                 <div class="modal-body bg-light">
                     <p class="lead mb-4">Translating complex ecological data into accessible, public-facing articles to drive awareness and community action in the Great Lakes.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-12">
+                            <h5 class="border-bottom pb-2 text-primary">IAGLR Conference Presentations</h5>
+                            <a href="./assets/IAGLR_Abstracts.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3 h-100 shadow-sm">
+                                <h6 class="mb-1 text-primary fw-bold">Connecting Communities and Research: Participatory Science for Great Lakes Mystery Snails[cite: 110]</h6>
+                                <p class="mb-0 text-muted small">Abstract outlining the GLANSIS collaboration with George Mason University to collect data on Chinese and Japanese mysterysnails through a participatory science effort[cite: 110].</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <h5 class="border-bottom pb-2 text-primary">Featured Articles</h5>
                     <div class="row g-4">
                         <div class="col-md-6">
                             <div class="card h-100 shadow-sm border p-3 bg-white">
                                 <h6 class="card-title text-primary fw-bold">The Cloning Crayfish Conundrum</h6>
                                 <p class="card-text text-muted small mb-3">Authored article outlining the threat of the parthenogenetic marbled crayfish to the Great Lakes ecosystem.</p>
-                                <a href="./assets/The%20cloning%20crayfish%20conundrum_%20A%20threat%20to%20the%20Great%20Lakes%20ecosystem.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
+                                <a href="./assets/The_cloning_crayfish_conundrum_A_threat_to_the_Great_Lakes_ecosystem.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card h-100 shadow-sm border p-3 bg-white">
                                 <h6 class="card-title text-primary fw-bold">No Silver Lining: Invasive Goldfish</h6>
                                 <p class="card-text text-muted small mb-3">Outreach piece detailing the ecological impacts of ornamental release and responsible rehoming alternatives.</p>
-                                <a href="./assets/No%20silver%20lining_%20Invasive%20goldfish%20in%20the%20Great%20Lakes.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
+                                <a href="./assets/No_silver_lining_Invasive_goldfish_in_the_Great_Lakes.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card h-100 shadow-sm border p-3 bg-white">
                                 <h6 class="card-title text-primary fw-bold">Unlocking the Mysteries of the Great Lakes</h6>
                                 <p class="card-text text-muted small mb-3">Call-to-action article recruiting participatory scientists to contribute to invasive mystery snail research.</p>
-                                <a href="./assets/Unlocking%20the%20mysteries%20of%20the%20Great%20Lakes_%20Contribute%20to%20snail%20research.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
+                                <a href="./assets/Unlocking_the_mysteries_of_the_Great_Lakes_Contribute_to_snail_research.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card h-100 shadow-sm border p-3 bg-white">
                                 <h6 class="card-title text-primary fw-bold">Marbled Crayfish Concerns</h6>
                                 <p class="card-text text-muted small mb-3">Subject matter expertise provided for a Great Lakes Now feature on the discovery of marbled crayfish.</p>
-                                <a href="./assets/Marbled%20crayfish%20raises%20eyebrows,%20and%20concerns%20-%20Great%20Lakes%20Now.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
+                                <a href="./assets/Marbled_crayfish_raises_eyebrows_and_concerns_Great_Lakes_Now.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
                             </div>
                         </div>
                     </div>
@@ -555,7 +620,7 @@
         </div>
     </div>
 
-    <!-- Modal 10: Partnerships -->
+    <!-- Modal 11: Partnerships -->
     <div class="modal fade" id="modalPartners" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
@@ -568,7 +633,7 @@
                     
                     <!-- Embedded ArcGIS Dashboard -->
                     <div class="ratio ratio-16x9 mb-5 rounded shadow-sm border">
-                        <iframe src="YOUR_DASHBOARD_URL_HERE" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.arcgis.com/apps/dashboards/c9953a7b5a5b40ba8af874eb32e3b79e" frameborder="0" allowfullscreen></iframe>
                     </div>
 
                     <div class="row g-4">
