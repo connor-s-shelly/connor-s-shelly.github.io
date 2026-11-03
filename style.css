@@ -1,27 +1,128 @@
+/* Custom CSS Variables - Great Lakes / Sea Grant Theme */
+:root {
+    --primary-color: #0d47a1; /* Deep Navy */
+    --secondary-color: #00838f; /* Deep Teal */
+    --accent-color: #00b4d8; /* Light Cyan */
+    --text-main: #2b3a4a;
+    --text-muted: #6c757d;
+    --bg-main: #f8f9fa;
+}
+
+/* Base Typography */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f4f6f9 !important;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-main) !important;
 }
 
-/* Add a smooth hover effect to Bootstrap cards and list items */
-.card, .list-group-item.bg-light {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.card:hover, .list-group-item.bg-light:hover {
+/* Custom Text Classes */
+.text-theme-primary {
+    color: var(--primary-color) !important;
+}
+.text-theme-secondary {
+    color: var(--secondary-color) !important;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: var(--primary-color) !important;
+    border-bottom: 3px solid var(--accent-color);
+}
+.tracking-wide {
+    letter-spacing: 1px;
+}
+
+/* Hero Section (Gradient Background) */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    position: relative;
+    padding-bottom: 80px !important;
+}
+.hero-img {
+    transition: transform 0.3s ease;
+}
+.hero-img:hover {
+    transform: scale(1.05);
+}
+.custom-btn {
+    color: var(--primary-color);
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+.custom-btn:hover {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+/* Technical Skill Badges */
+.skill-badge {
+    background-color: rgba(0, 131, 143, 0.1) !important;
+    color: var(--secondary-color) !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 131, 143, 0.2);
+}
+
+/* Project Cards */
+.portfolio-card {
+    cursor: pointer;
+    border-radius: 12px !important;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    border-bottom: 4px solid transparent !important;
+}
+.portfolio-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-bottom: 4px solid var(--accent-color) !important;
+}
+.card-icon {
+    font-size: 2.5rem;
+}
+.card-link {
+    transition: color 0.3s ease;
+}
+.portfolio-card:hover .card-link {
+    color: var(--primary-color) !important;
+}
+
+/* Generic Hover Effect for List Items / Article Cards */
+.custom-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.custom-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08) !important;
     z-index: 1;
 }
 
-/* Ensure images fit nicely in their containers without distortion */
-.card-img-top {
-    object-fit: contain;
-    max-height: 300px;
-    background-color: #ffffff;
+/* Modals */
+.modal-content {
+    border-radius: 16px;
+    border: none;
+    overflow: hidden;
+}
+.custom-modal-header {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    border-bottom: none;
+}
+.modal-body img {
+    background-color: white;
+    padding: 4px;
 }
 
-/* Clean list group styling */
-.list-group-item {
-    border-radius: 8px !important;
+/* Border Utilities */
+@media (min-width: 768px) {
+    .border-start-md {
+        border-left: 1px solid #e9ecef;
+    }
 }
