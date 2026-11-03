@@ -6,15 +6,23 @@
     <title>Connor Shelly - Portfolio</title>
     
     <link rel="icon" type="image/png" href="./assets/portfolio_icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="bg-light">
+<body class="bg-body-tertiary">
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Connor Shelly</a>
+            <a class="navbar-brand fw-bold text-uppercase tracking-wide" href="#">Connor Shelly</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,25 +35,27 @@
         </div>
     </nav>
 
-    <!-- Main Header -->
-    <header class="container text-center py-5">
-        <img src="./assets/Connor%20Shelly_Headshot_HiRes.jpg" alt="Connor Shelly" class="rounded-circle mb-4 shadow-sm" style="width: 200px; height: 200px; object-fit: cover; border: 5px solid white;">
-        <h1 class="display-4 fw-bold">Hi, I'm Connor Shelly</h1>
-        <p class="lead text-muted">GIS & Data Analytics Professional</p>
-        <a href="./assets/Resume_CShelly_GIS.pdf" target="_blank" class="btn btn-primary btn-lg mt-3 shadow-sm">
-            View My Resume
-        </a>
+    <!-- Main Header with Headshot -->
+    <header class="hero-section text-center py-5 shadow-sm">
+        <div class="container py-4">
+            <img src="./assets/Connor%20Shelly_Headshot_HiRes.jpg" alt="Connor Shelly" class="rounded-circle mb-4 shadow hero-img">
+            <h1 class="display-4 fw-bold text-white mb-3">Hi, I'm Connor Shelly</h1>
+            <p class="lead text-white-50 mb-4">GIS & Data Analytics Professional</p>
+            <a href="./assets/Resume_CShelly_GIS.pdf" target="_blank" class="btn btn-light btn-lg px-4 shadow-sm custom-btn">
+                View My Resume
+            </a>
+        </div>
     </header>
 
     <!-- Experience & Education Section -->
-    <section id="experience" class="container py-5 bg-white rounded-3 shadow-sm mb-5 border-top border-primary border-3">
+    <section id="experience" class="container py-5 bg-white rounded-4 shadow-sm mt-n5 position-relative z-1 mb-5">
         <div class="row px-4 pt-3">
-            <div class="col-md-6 mb-4 mb-md-0">
-                <h3 class="mb-4 text-primary">Experience</h3>
+            <div class="col-md-6 mb-4 mb-md-0 pe-md-5">
+                <h3 class="mb-4 text-theme-primary border-bottom pb-2">Experience</h3>
                 <div class="mb-4">
                     <h5 class="fw-bold mb-1">Web Developer & GIS Specialist</h5>
-                    <p class="text-muted mb-2">GLANSIS, Michigan Sea Grant | Jan 2024 - Present</p>
-                    <ul class="text-secondary">
+                    <p class="text-theme-secondary mb-2 fw-medium">GLANSIS, Michigan Sea Grant | Jan 2024 - Present</p>
+                    <ul class="text-muted small lh-lg">
                         <li>Execute spatial analyses with the ArcGIS Suite to support decision making for government agencies.</li>
                         <li>Develop and maintain websites and web-based tools using HTML, CSS, and JavaScript.</li>
                         <li>Deliver research on complex geospatial data to diverse audiences.</li>
@@ -53,154 +63,167 @@
                 </div>
                 <div class="mb-3">
                     <h5 class="fw-bold mb-1">Data Associate</h5>
-                    <p class="text-muted mb-2">GLANSIS, Michigan Sea Grant | Jan 2023 - Jan 2024</p>
-                    <ul class="text-secondary">
+                    <p class="text-theme-secondary mb-2 fw-medium">GLANSIS, Michigan Sea Grant | Jan 2023 - Jan 2024</p>
+                    <ul class="text-muted small lh-lg">
                         <li>Managed data for educational products and provided technical support to improve web and GIS tools.</li>
                         <li>Synthesized complex information to produce accessible educational materials.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <h3 class="mb-4 text-primary">Education & Certifications</h3>
+            <div class="col-md-6 ps-md-5 border-start-md">
+                <h3 class="mb-4 text-theme-primary border-bottom pb-2">Education & Certifications</h3>
                 <div class="mb-4">
                     <h5 class="fw-bold mb-1">B.S. in Fisheries and Wildlife Sciences</h5>
-                    <p class="text-muted mb-1">Oregon State University | 2022</p>
-                    <p class="text-secondary">Specialization in Ecosystem Analytics.</p>
+                    <p class="text-theme-secondary fw-medium mb-1">Oregon State University | 2022</p>
+                    <p class="text-muted small">Specialization in Ecosystem Analytics.</p>
                 </div>
                 <div class="mb-4">
                     <h5 class="fw-bold mb-1">Geographic Information Systems (GIS)</h5>
-                    <p class="text-muted mb-1">UC Davis | 2021</p>
-                    <p class="text-secondary">Specialization Certification.</p>
+                    <p class="text-theme-secondary fw-medium mb-1">UC Davis | 2021</p>
+                    <p class="text-muted small">Specialization Certification.</p>
                 </div>
-                <div class="mb-3">
-                    <h5 class="fw-bold mb-1">Technical Skills</h5>
-                    <p class="text-secondary mt-2">
-                        <span class="badge bg-secondary me-1">ArcGIS Suite</span>
-                        <span class="badge bg-secondary me-1">Python</span>
-                        <span class="badge bg-secondary me-1">R</span>
-                        <span class="badge bg-secondary me-1">SQL</span>
-                        <span class="badge bg-secondary me-1">HTML/CSS</span>
-                        <span class="badge bg-secondary">JavaScript</span>
-                    </p>
+                <div class="mb-3 mt-5">
+                    <h5 class="fw-bold mb-3 text-theme-primary">Technical Skills</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge skill-badge">ArcGIS Suite</span>
+                        <span class="badge skill-badge">Python</span>
+                        <span class="badge skill-badge">R</span>
+                        <span class="badge skill-badge">SQL</span>
+                        <span class="badge skill-badge">HTML/CSS</span>
+                        <span class="badge skill-badge">JavaScript</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Grid Main View -->
-    <section id="projects" class="container py-5 mb-5 bg-white rounded-3 shadow-sm">
-        <h2 class="mb-4 border-bottom pb-2 px-4 pt-3 text-primary">Featured Projects</h2>
-        <p class="lead text-muted mb-4 px-4">Click on any project to view detailed maps, methodologies, and deliverables.</p>
+    <section id="projects" class="container py-5 mb-5 bg-white rounded-4 shadow-sm">
+        <div class="px-4 mb-4">
+            <h2 class="mb-2 text-theme-primary">Featured Projects</h2>
+            <p class="text-muted">Click on any project to view detailed maps, methodologies, and deliverables.</p>
+        </div>
         
         <div class="row g-4 px-4 pb-4">
             
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalClimate">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">Climate & Invasion Risk Modeling</h5>
-                        <p class="card-text text-muted">Analyzing how projected climate change and shifting thermal regimes alter the invasion risk profile of the Laurentian Great Lakes Basin.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">🌡️</div>
+                        <h5 class="card-title text-theme-primary fw-bold">Climate & Invasion Risk Modeling</h5>
+                        <p class="card-text text-muted small mb-4">Analyzing how projected climate change and shifting thermal regimes alter the invasion risk profile of the Laurentian Great Lakes Basin.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalCisco">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">Cisco Restoration & AIS Threats</h5>
-                        <p class="card-text text-muted">An assessment of the threats aquatic invasive species pose to the restoration of Cisco in Lake Erie. Features presentations from IAGLR.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">🐟</div>
+                        <h5 class="card-title text-theme-primary fw-bold">Cisco Restoration & AIS Threats</h5>
+                        <p class="card-text text-muted small mb-4">An assessment of the threats aquatic invasive species pose to the restoration of Cisco in Lake Erie. Features presentations from IAGLR.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalUSCRP">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">USCRP Habitat Modeling</h5>
-                        <p class="card-text text-muted">Spatial mapping, suitability indexing, and 10-year forecasting to identify and track critical habitat refugia against invasive species pressures.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">🗺️</div>
+                        <h5 class="card-title text-theme-primary fw-bold">USCRP Habitat Modeling</h5>
+                        <p class="card-text text-muted small mb-4">Spatial mapping, suitability indexing, and 10-year forecasting to identify and track critical habitat refugia against invasive species pressures.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalAEU">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">AEU Predictive Modeling</h5>
-                        <p class="card-text text-muted">Comparing observed species distributions against predictive Aquatic Ecological Unit (AEU) modeling. Presented at IAGLR.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">🔬</div>
+                        <h5 class="card-title text-theme-primary fw-bold">AEU Predictive Modeling</h5>
+                        <p class="card-text text-muted small mb-4">Comparing observed species distributions against predictive Aquatic Ecological Unit (AEU) modeling. Presented at IAGLR.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalNN">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">Nearest Neighbor Spread</h5>
-                        <p class="card-text text-muted">Spatial modeling of species spread across Great Lakes Basin HUC 8 watersheds over time. Presented at IAGLR.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">📈</div>
+                        <h5 class="card-title text-theme-primary fw-bold">Nearest Neighbor Spread</h5>
+                        <p class="card-text text-muted small mb-4">Spatial modeling of species spread across Great Lakes Basin HUC 8 watersheds over time. Presented at IAGLR.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalSOGL">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">State of the Great Lakes (SOGL)</h5>
-                        <p class="card-text text-muted">Evaluating historical introduction vectors and spatial point densities of aquatic invasive species across the basin.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">📍</div>
+                        <h5 class="card-title text-theme-primary fw-bold">State of the Great Lakes (SOGL)</h5>
+                        <p class="card-text text-muted small mb-4">Evaluating historical introduction vectors and spatial point densities of aquatic invasive species across the basin.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalTop10">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">Top 10 Invasive Species</h5>
-                        <p class="card-text text-muted">A comprehensive StoryMap and demographic analysis of the ten most impactful species currently in the Great Lakes.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">📊</div>
+                        <h5 class="card-title text-theme-primary fw-bold">Top 10 Invasive Species</h5>
+                        <p class="card-text text-muted small mb-4">A comprehensive StoryMap and demographic analysis of the ten most impactful species currently in the Great Lakes.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalRisk">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">GLANSIS Risk Assessments</h5>
-                        <p class="card-text text-muted">Authoring scientific risk profiles to determine the introduction, establishment, and impact potential of watchlist species.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">📋</div>
+                        <h5 class="card-title text-theme-primary fw-bold">GLANSIS Risk Assessments</h5>
+                        <p class="card-text text-muted small mb-4">Authoring scientific risk profiles to determine the introduction, establishment, and impact potential of watchlist species.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalTGLL">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">TGLL Watershed Mapping</h5>
-                        <p class="card-text text-muted">Mapping localized nonindigenous species clusters to support community awareness and educational curriculum.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">🏫</div>
+                        <h5 class="card-title text-theme-primary fw-bold">TGLL Watershed Mapping</h5>
+                        <p class="card-text text-muted small mb-4">Mapping localized nonindigenous species clusters to support community awareness and educational curriculum.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalSciComm">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">Science Communication</h5>
-                        <p class="card-text text-muted">Translating complex ecological data into accessible, public-facing articles to drive awareness and community action.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">✍️</div>
+                        <h5 class="card-title text-theme-primary fw-bold">Science Communication</h5>
+                        <p class="card-text text-muted small mb-4">Translating complex ecological data into accessible, public-facing articles to drive awareness and community action.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm border-0 portfolio-card" data-bs-toggle="modal" data-bs-target="#modalPartners">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary fw-bold">Sea Grant Partnerships</h5>
-                        <p class="card-text text-muted">An interactive ArcGIS Dashboard and geospatial tracking of organizational collaborations across the Great Lakes.</p>
-                        <span class="text-primary small fw-bold mt-auto">View Details &rarr;</span>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="card-icon mb-3">🤝</div>
+                        <h5 class="card-title text-theme-primary fw-bold">Sea Grant Partnerships</h5>
+                        <p class="card-text text-muted small mb-4">An interactive ArcGIS Dashboard and geospatial tracking of organizational collaborations across the Great Lakes.</p>
+                        <span class="text-theme-secondary small fw-bold mt-auto card-link">View Details &rarr;</span>
                     </div>
                 </div>
             </div>
@@ -216,8 +239,8 @@
     <div class="modal fade" id="modalClimate" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">Great Lakes Basin Climate & Invasion Risk Modeling</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">Great Lakes Basin Climate & Invasion Risk Modeling</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
@@ -225,23 +248,23 @@
                     <div class="row g-4">
                         <div class="col-md-4">
                             <img src="./assets/climate/Climate_V2_HighRes.jpg" class="img-fluid rounded shadow-sm border" alt="Climate Projections">
-                            <h6 class="mt-2 fw-bold text-primary">Climate Projections: 2050</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Climate Projections: 2050</h6>
                             <p class="small text-muted">Mapping species distribution risk changes by 2050.</p>
                         </div>
                         <div class="col-md-4">
                             <img src="./assets/climate/GreatLakesBasin_Inset_V2.jpg" class="img-fluid rounded shadow-sm border" alt="Basin Shorelines">
-                            <h6 class="mt-2 fw-bold text-primary">Basin Shorelines</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Basin Shorelines</h6>
                             <p class="small text-muted">Detailed mapping of the Basin boundary.</p>
                         </div>
                         <div class="col-md-4">
                             <img src="./assets/climate/GreatLakesBasin_InsetMap.jpg" class="img-fluid rounded shadow-sm border" alt="Regional Context">
-                            <h6 class="mt-2 fw-bold text-primary">Regional Context</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Regional Context</h6>
                             <p class="small text-muted">Continental context and inner watershed delineations.</p>
                         </div>
                         <div class="col-12 mt-4">
-                            <h5 class="border-bottom pb-2">Related Deliverables</h5>
-                            <a href="./assets/A%20Secondary%20Analysis%20of%20Invasion%20Risk.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3">
-                                <h6 class="mb-1 text-primary fw-bold">A Secondary Analysis of Invasion Risk in the Great Lakes</h6>
+                            <h5 class="border-bottom pb-2 text-theme-primary">Related Deliverables</h5>
+                            <a href="./assets/A%20Secondary%20Analysis%20of%20Invasion%20Risk.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3 custom-hover">
+                                <h6 class="mb-1 text-theme-primary fw-bold">A Secondary Analysis of Invasion Risk in the Great Lakes</h6>
                                 <p class="mb-0 text-muted small">Analysis evaluating how increased water temperatures impact the establishment risk of watchlist species.</p>
                             </a>
                         </div>
@@ -255,8 +278,8 @@
     <div class="modal fade" id="modalCisco" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">Cisco Restoration & AIS Threats</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">Cisco Restoration & AIS Threats</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
@@ -264,34 +287,34 @@
                     
                     <div class="row g-4 mb-4">
                         <div class="col-12">
-                            <h5 class="border-bottom pb-2 text-primary">IAGLR Conference Presentations</h5>
-                            <p class="small text-muted">Research presented on how aquatic invasive species threaten the restoration of Cisco in Lake Erie[cite: 111, 112]. Geospatial analysis indicates that out of 2153.5 square miles of potential habitat, 444.97 square miles are notably affected by AIS[cite: 111]. Key species impacting Cisco include rainbow smelt, spiny waterflea, sea lamprey, bacterial kidney disease, and alewife[cite: 111].</p>
+                            <h5 class="border-bottom pb-2 text-theme-primary">IAGLR Conference Presentations</h5>
+                            <p class="small text-muted">Research presented on how aquatic invasive species threaten the restoration of Cisco in Lake Erie. Geospatial analysis indicates that out of 2153.5 square miles of potential habitat, 444.97 square miles are notably affected by AIS. Key species impacting Cisco include rainbow smelt, spiny waterflea, sea lamprey, bacterial kidney disease, and alewife.</p>
                         </div>
                         <div class="col-md-6">
-                            <a href="./assets/IAGLR_Presentation_Coregonus.pptx" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3 h-100 shadow-sm">
-                                <h6 class="mb-1 text-primary fw-bold">IAGLR Presentation Slides (.pptx)</h6>
+                            <a href="./assets/IAGLR_Presentation_Coregonus.pptx" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3 h-100 shadow-sm custom-hover">
+                                <h6 class="mb-1 text-theme-primary fw-bold">IAGLR Presentation Slides (.pptx)</h6>
                                 <p class="mb-0 text-muted small">Restoring Coregonus artedi: Challenges Posed By Aquatic Invasive Species In Lake Erie.</p>
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <a href="./assets/IAGLR_Abstracts.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3 h-100 shadow-sm">
-                                <h6 class="mb-1 text-primary fw-bold">IAGLR Abstracts (.pdf)</h6>
+                            <a href="./assets/IAGLR_Abstracts.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3 h-100 shadow-sm custom-hover">
+                                <h6 class="mb-1 text-theme-primary fw-bold">IAGLR Abstracts (.pdf)</h6>
                                 <p class="mb-0 text-muted small">Abstracts detailing research methodologies and spatial analysis findings.</p>
                             </a>
                         </div>
                     </div>
 
-                    <h5 class="border-bottom pb-2 text-primary">Project Reports</h5>
+                    <h5 class="border-bottom pb-2 text-theme-primary mt-4">Project Reports</h5>
                     <div class="row g-4">
                         <div class="col-md-6">
-                            <a href="./assets/Invasive%20Species%20Threats%20Assessment.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-4 h-100 shadow-sm">
-                                <h5 class="mb-1 text-primary fw-bold">Invasive Species Threats Assessment</h5>
+                            <a href="./assets/Invasive%20Species%20Threats%20Assessment.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-4 h-100 shadow-sm custom-hover">
+                                <h5 class="mb-2 text-theme-primary fw-bold">Invasive Species Threats Assessment</h5>
                                 <p class="mb-0 text-muted small">Comprehensive qualitative analysis of AIS impacts on Cisco in Lake Erie.</p>
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <a href="./assets/Summary%20Report.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-4 h-100 shadow-sm">
-                                <h5 class="mb-1 text-primary fw-bold">Executive Summary Report</h5>
+                            <a href="./assets/Summary%20Report.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-4 h-100 shadow-sm custom-hover">
+                                <h5 class="mb-2 text-theme-primary fw-bold">Executive Summary Report</h5>
                                 <p class="mb-0 text-muted small">Briefing document detailing species of concern and spatial hot-spot analysis.</p>
                             </a>
                         </div>
@@ -305,8 +328,8 @@
     <div class="modal fade" id="modalUSCRP" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">USCRP Habitat Modeling</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">USCRP Habitat Modeling</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
@@ -314,27 +337,27 @@
                     <div class="row g-4">
                         <div class="col-md-4">
                             <img src="./assets/USCRP/AIS_Impact.png" class="img-fluid rounded shadow-sm border" alt="AIS Impact">
-                            <h6 class="mt-2 fw-bold text-primary">AIS Impact Distribution</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">AIS Impact Distribution</h6>
                         </div>
                         <div class="col-md-4">
                             <img src="./assets/USCRP/HSI_Layout_V1.png" class="img-fluid rounded shadow-sm border" alt="HSI">
-                            <h6 class="mt-2 fw-bold text-primary">Habitat Suitability Index</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Habitat Suitability Index</h6>
                         </div>
                         <div class="col-md-4">
                             <img src="./assets/USCRP/Refugia_Index.png" class="img-fluid rounded shadow-sm border" alt="Refugia">
-                            <h6 class="mt-2 fw-bold text-primary">Refugia Index</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Refugia Index</h6>
                         </div>
                         <div class="col-md-4">
                             <img src="./assets/USCRP/Chart1_BasinWide_Trajectory.png" class="img-fluid rounded shadow-sm border" alt="Trajectory">
-                            <h6 class="mt-2 fw-bold text-primary">Core Refugia Loss Trajectory</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Core Refugia Loss Trajectory</h6>
                         </div>
                         <div class="col-md-4">
                             <img src="./assets/USCRP/Sensitivity_Plot1_Area_Decay.png" class="img-fluid rounded shadow-sm border" alt="Sensitivity 1">
-                            <h6 class="mt-2 fw-bold text-primary">Sensitivity Analysis (Decay)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Sensitivity Analysis (Decay)</h6>
                         </div>
                         <div class="col-md-4">
                             <img src="./assets/USCRP/Sensitivity_Plot3_Habitat_Squeeze.png" class="img-fluid rounded shadow-sm border" alt="Sensitivity 2">
-                            <h6 class="mt-2 fw-bold text-primary">The 'Habitat Squeeze'</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">The 'Habitat Squeeze'</h6>
                         </div>
                     </div>
                 </div>
@@ -346,8 +369,8 @@
     <div class="modal fade" id="modalAEU" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">Aquatic Ecological Unit (AEU) Predictive Modeling</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">Aquatic Ecological Unit (AEU) Predictive Modeling</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
@@ -355,23 +378,23 @@
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/BL_CorrectPredictions_Updated.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
-                            <h6 class="mt-2 fw-bold text-primary">Spiny Waterflea (AEU Predictions)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Spiny Waterflea (AEU Predictions)</h6>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/GC_Correct_Predictions.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
-                            <h6 class="mt-2 fw-bold text-primary">Golden Clam (AEU Predictions)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Golden Clam (AEU Predictions)</h6>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/NM_CorrectPredictions_Updated.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
-                            <h6 class="mt-2 fw-bold text-primary">Round Goby (AEU Predictions)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Round Goby (AEU Predictions)</h6>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/PC_Correct_Predictions.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
-                            <h6 class="mt-2 fw-bold text-primary">Curly-leaf Pondweed (AEU Predictions)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Curly-leaf Pondweed (AEU Predictions)</h6>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/AEU/VHS_CorrectPredictions_Updated.jpg" class="img-fluid rounded shadow-sm border" alt="AEU">
-                            <h6 class="mt-2 fw-bold text-primary">VHS Virus (AEU Predictions)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">VHS Virus (AEU Predictions)</h6>
                         </div>
                     </div>
                 </div>
@@ -383,8 +406,8 @@
     <div class="modal fade" id="modalNN" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">Nearest Neighbor Spread Analysis</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">Nearest Neighbor Spread Analysis</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
@@ -392,23 +415,23 @@
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/Nearest_Neighbor/BL_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
-                            <h6 class="mt-2 fw-bold text-primary">Spiny Waterflea (Spread)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Spiny Waterflea (Spread)</h6>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/Nearest_Neighbor/CF_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
-                            <h6 class="mt-2 fw-bold text-primary">Golden Clam (Spread)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Golden Clam (Spread)</h6>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/Nearest_Neighbor/NM_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
-                            <h6 class="mt-2 fw-bold text-primary">Round Goby (Spread)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Round Goby (Spread)</h6>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/Nearest_Neighbor/PC_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
-                            <h6 class="mt-2 fw-bold text-primary">Curly-leaf Pondweed (Spread)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Curly-leaf Pondweed (Spread)</h6>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <img src="./assets/Nearest_Neighbor/VHS_NearestNeighbor.gif" class="img-fluid rounded shadow-sm border" alt="Spread">
-                            <h6 class="mt-2 fw-bold text-primary">VHS Virus (Spread)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">VHS Virus (Spread)</h6>
                         </div>
                     </div>
                 </div>
@@ -420,8 +443,8 @@
     <div class="modal fade" id="modalSOGL" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">State of the Great Lakes (SOGL)</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">State of the Great Lakes (SOGL)</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
@@ -429,23 +452,23 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <img src="./assets/SOGL/SOGL_HUC8_Introductions_HighQuality.jpg" class="img-fluid rounded shadow-sm border" alt="HUC 8 Introductions">
-                            <h6 class="mt-2 fw-bold text-primary">HUC 8 Introductions</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">HUC 8 Introductions</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/SOGL/SOGL_HUC8_NumberOfIntroductions_HighQuality.jpg" class="img-fluid rounded shadow-sm border" alt="HUC 8 Density">
-                            <h6 class="mt-2 fw-bold text-primary">HUC 8 Introduction Density</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">HUC 8 Introduction Density</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/SOGL/SOGL_IntroductionSites_HighQuality.jpg" class="img-fluid rounded shadow-sm border" alt="Introduction Sites">
-                            <h6 class="mt-2 fw-bold text-primary">Historical Introduction Sites</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Historical Introduction Sites</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/SOGL/SOGL_IntroductionSites_Accessible_HQ.jpg" class="img-fluid rounded shadow-sm border" alt="Accessible Introduction Sites">
-                            <h6 class="mt-2 fw-bold text-primary">Introduction Sites (Color-Blind Accessible)</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Introduction Sites (Color-Blind Accessible)</h6>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 text-center">
                             <img src="./assets/SOGL/SOGL_PointDensity_HighQuality.jpg" class="img-fluid rounded shadow-sm border w-100" style="max-height: 500px; object-fit: contain;" alt="Point Density">
-                            <h6 class="mt-2 fw-bold text-primary text-center">Invasive Species Point Density</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Invasive Species Point Density</h6>
                         </div>
                     </div>
                 </div>
@@ -457,19 +480,16 @@
     <div class="modal fade" id="modalTop10" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">Top 10 Invasive Species Analysis</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">Top 10 Invasive Species Analysis</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
                     <p class="lead mb-4">A comprehensive demographic analysis of the ten most impactful species currently in the Great Lakes, featuring an interactive ArcGIS StoryMap and Dashboard.</p>
                     
-                    <!-- Embedded ArcGIS StoryMap -->
                     <div class="ratio ratio-16x9 mb-4 rounded shadow-sm border">
                         <iframe src="https://storymaps.arcgis.com/stories/d7d0d45321c94ffaa4d4eb94bd652bc8" frameborder="0" allowfullscreen></iframe>
                     </div>
-
-                    <!-- Embedded ArcGIS Dashboard -->
                     <div class="ratio ratio-16x9 mb-5 rounded shadow-sm border">
                         <iframe src="https://www.arcgis.com/apps/dashboards/88853fe1acab4618a7b51e8a5d9e609d" frameborder="0" allowfullscreen></iframe>
                     </div>
@@ -477,19 +497,19 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <img src="./assets/top_10/Great%20Lakes%20Aquatic%20Invasive%20Species_Large.jpg" class="img-fluid rounded shadow-sm border" alt="Distribution">
-                            <h6 class="mt-2 fw-bold text-primary">Invasive Species Distribution</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Invasive Species Distribution</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/top_10/pie_figure_new_enhanced.jpg" class="img-fluid rounded shadow-sm border" alt="Demographics">
-                            <h6 class="mt-2 fw-bold text-primary">Demographics of Invasion</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Demographics of Invasion</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/top_10/ImpactScores.jpg" class="img-fluid rounded shadow-sm border" alt="Impact">
-                            <h6 class="mt-2 fw-bold text-primary">Impact Score Distribution</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Impact Score Distribution</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/top_10/Top%2010%20Table.JPG" class="img-fluid rounded shadow-sm border" alt="Top 10 Table">
-                            <h6 class="mt-2 fw-bold text-primary">The Top 10 List</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">The Top 10 List</h6>
                         </div>
                     </div>
                 </div>
@@ -501,28 +521,28 @@
     <div class="modal fade" id="modalRisk" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">GLANSIS Risk & Impact Assessments</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">GLANSIS Risk & Impact Assessments</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
                     <p class="lead mb-4">Authoring scientific risk profiles to determine the introduction, establishment, and environmental/socio-economic impact potential of watchlist species.</p>
                     <div class="list-group shadow-sm">
-                        <a href="./assets/Cherax_destructor_RA_20230719.pdf" target="_blank" class="list-group-item list-group-item-action bg-white border p-3">
-                            <h6 class="mb-1 fw-bold text-primary">Cherax destructor (Yabby) Risk Assessment</h6>
-                            <small class="text-muted">Evaluating introduction vectors via the pet trade and potential competitive dominance.</small>
+                        <a href="./assets/Cherax_destructor_RA_20230719.pdf" target="_blank" class="list-group-item list-group-item-action bg-white border p-4 custom-hover">
+                            <h5 class="mb-2 fw-bold text-theme-primary">Cherax destructor (Yabby) Risk Assessment</h5>
+                            <p class="mb-0 text-muted small">Evaluating introduction vectors via the pet trade and potential competitive dominance.</p>
                         </a>
-                        <a href="./assets/Limnoperna_fortunei_RA_20230725.pdf" target="_blank" class="list-group-item list-group-item-action bg-white border p-3">
-                            <h6 class="mb-1 fw-bold text-primary">Limnoperna fortunei (Golden Mussel) Risk Assessment</h6>
-                            <small class="text-muted">Assessment of biofouling threats, trophic disruption, and physiological tolerances.</small>
+                        <a href="./assets/Limnoperna_fortunei_RA_20230725.pdf" target="_blank" class="list-group-item list-group-item-action bg-white border p-4 custom-hover mt-2 rounded">
+                            <h5 class="mb-2 fw-bold text-theme-primary">Limnoperna fortunei (Golden Mussel) Risk Assessment</h5>
+                            <p class="mb-0 text-muted small">Assessment of biofouling threats, trophic disruption, and physiological tolerances.</p>
                         </a>
-                        <a href="./assets/Procambarus_clarkii_OIA_2024.pdf" target="_blank" class="list-group-item list-group-item-action bg-white border p-3">
-                            <h6 class="mb-1 fw-bold text-primary">Procambarus clarkii (Red Swamp Crayfish) OIA</h6>
-                            <small class="text-muted">Analyzing ecological engineering impacts, herbivory, and disease transmission potential.</small>
+                        <a href="./assets/Procambarus_clarkii_OIA_2024.pdf" target="_blank" class="list-group-item list-group-item-action bg-white border p-4 custom-hover mt-2 rounded">
+                            <h5 class="mb-2 fw-bold text-theme-primary">Procambarus clarkii (Red Swamp Crayfish) OIA</h5>
+                            <p class="mb-0 text-muted small">Analyzing ecological engineering impacts, herbivory, and disease transmission potential.</p>
                         </a>
-                        <a href="./assets/Procambarus_virginalis_RA_20231208.pdf" target="_blank" class="list-group-item list-group-item-action bg-white border p-3">
-                            <h6 class="mb-1 fw-bold text-primary">Procambarus virginalis (Marbled Crayfish) Risk Assessment</h6>
-                            <small class="text-muted">Evaluating the unique establishment risks posed by parthenogenetic reproduction.</small>
+                        <a href="./assets/Procambarus_virginalis_RA_20231208.pdf" target="_blank" class="list-group-item list-group-item-action bg-white border p-4 custom-hover mt-2 rounded">
+                            <h5 class="mb-2 fw-bold text-theme-primary">Procambarus virginalis (Marbled Crayfish) Risk Assessment</h5>
+                            <p class="mb-0 text-muted small">Evaluating the unique establishment risks posed by parthenogenetic reproduction.</p>
                         </a>
                     </div>
                 </div>
@@ -534,8 +554,8 @@
     <div class="modal fade" id="modalTGLL" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">TGLL Watershed & School Mapping</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">TGLL Watershed & School Mapping</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
@@ -543,19 +563,19 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <img src="./assets/TGLL_Maps/Dossin_ClusterMap.jpg" class="img-fluid rounded shadow-sm border" alt="Cluster Map">
-                            <h6 class="mt-2 fw-bold text-primary">Ernest J. Dossin: Cluster Map</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Ernest J. Dossin: Cluster Map</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/TGLL_Maps/All_ANS_OttawaStony.jpg" class="img-fluid rounded shadow-sm border" alt="Ottawa-Stony">
-                            <h6 class="mt-2 fw-bold text-primary">Ottawa-Stony Watershed</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Ottawa-Stony Watershed</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/TGLL_Maps/Dossin_Fish.jpg" class="img-fluid rounded shadow-sm border" alt="Dossin Fish">
-                            <h6 class="mt-2 fw-bold text-primary">Dossin: Nonindigenous Fish</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Dossin: Nonindigenous Fish</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/TGLL_Maps/Lincoln%20High%20School%20Map_Plants.jpg" class="img-fluid rounded shadow-sm border" alt="Lincoln Plants">
-                            <h6 class="mt-2 fw-bold text-primary">Lincoln High School: Plants</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Lincoln High School: Plants</h6>
                         </div>
                     </div>
                 </div>
@@ -567,8 +587,8 @@
     <div class="modal fade" id="modalSciComm" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">Science Communication & Outreach</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">Science Communication & Outreach</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
@@ -576,41 +596,41 @@
                     
                     <div class="row g-4 mb-4">
                         <div class="col-12">
-                            <h5 class="border-bottom pb-2 text-primary">IAGLR Conference Presentations</h5>
-                            <a href="./assets/IAGLR_Abstracts.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-3 h-100 shadow-sm">
-                                <h6 class="mb-1 text-primary fw-bold">Connecting Communities and Research: Participatory Science for Great Lakes Mystery Snails[cite: 110]</h6>
-                                <p class="mb-0 text-muted small">Abstract outlining the GLANSIS collaboration with George Mason University to collect data on Chinese and Japanese mysterysnails through a participatory science effort[cite: 110].</p>
+                            <h5 class="border-bottom pb-2 text-theme-primary">IAGLR Conference Presentations</h5>
+                            <a href="./assets/IAGLR_Abstracts.pdf" target="_blank" class="list-group-item list-group-item-action bg-white rounded border p-4 h-100 shadow-sm custom-hover">
+                                <h6 class="mb-1 text-theme-primary fw-bold">Connecting Communities and Research: Participatory Science for Great Lakes Mystery Snails</h6>
+                                <p class="mb-0 text-muted small">Abstract outlining the GLANSIS collaboration with George Mason University to collect data on Chinese and Japanese mysterysnails through a participatory science effort.</p>
                             </a>
                         </div>
                     </div>
 
-                    <h5 class="border-bottom pb-2 text-primary">Featured Articles</h5>
+                    <h5 class="border-bottom pb-2 text-theme-primary mt-4">Featured Articles</h5>
                     <div class="row g-4">
                         <div class="col-md-6">
-                            <div class="card h-100 shadow-sm border p-3 bg-white">
-                                <h6 class="card-title text-primary fw-bold">The Cloning Crayfish Conundrum</h6>
-                                <p class="card-text text-muted small mb-3">Authored article outlining the threat of the parthenogenetic marbled crayfish to the Great Lakes ecosystem.</p>
+                            <div class="card h-100 shadow-sm border-0 p-4 bg-white custom-hover">
+                                <h6 class="card-title text-theme-primary fw-bold">The Cloning Crayfish Conundrum</h6>
+                                <p class="card-text text-muted small mb-4">Authored article outlining the threat of the parthenogenetic marbled crayfish to the Great Lakes ecosystem.</p>
                                 <a href="./assets/The_cloning_crayfish_conundrum_A_threat_to_the_Great_Lakes_ecosystem.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card h-100 shadow-sm border p-3 bg-white">
-                                <h6 class="card-title text-primary fw-bold">No Silver Lining: Invasive Goldfish</h6>
-                                <p class="card-text text-muted small mb-3">Outreach piece detailing the ecological impacts of ornamental release and responsible rehoming alternatives.</p>
+                            <div class="card h-100 shadow-sm border-0 p-4 bg-white custom-hover">
+                                <h6 class="card-title text-theme-primary fw-bold">No Silver Lining: Invasive Goldfish</h6>
+                                <p class="card-text text-muted small mb-4">Outreach piece detailing the ecological impacts of ornamental release and responsible rehoming alternatives.</p>
                                 <a href="./assets/No_silver_lining_Invasive_goldfish_in_the_Great_Lakes.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card h-100 shadow-sm border p-3 bg-white">
-                                <h6 class="card-title text-primary fw-bold">Unlocking the Mysteries of the Great Lakes</h6>
-                                <p class="card-text text-muted small mb-3">Call-to-action article recruiting participatory scientists to contribute to invasive mystery snail research.</p>
+                            <div class="card h-100 shadow-sm border-0 p-4 bg-white custom-hover">
+                                <h6 class="card-title text-theme-primary fw-bold">Unlocking the Mysteries of the Great Lakes</h6>
+                                <p class="card-text text-muted small mb-4">Call-to-action article recruiting participatory scientists to contribute to invasive mystery snail research.</p>
                                 <a href="./assets/Unlocking_the_mysteries_of_the_Great_Lakes_Contribute_to_snail_research.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card h-100 shadow-sm border p-3 bg-white">
-                                <h6 class="card-title text-primary fw-bold">Marbled Crayfish Concerns</h6>
-                                <p class="card-text text-muted small mb-3">Subject matter expertise provided for a Great Lakes Now feature on the discovery of marbled crayfish.</p>
+                            <div class="card h-100 shadow-sm border-0 p-4 bg-white custom-hover">
+                                <h6 class="card-title text-theme-primary fw-bold">Marbled Crayfish Concerns</h6>
+                                <p class="card-text text-muted small mb-4">Subject matter expertise provided for a Great Lakes Now feature on the discovery of marbled crayfish.</p>
                                 <a href="./assets/Marbled_crayfish_raises_eyebrows_and_concerns_Great_Lakes_Now.pdf" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Read Article</a>
                             </div>
                         </div>
@@ -624,14 +644,13 @@
     <div class="modal fade" id="modalPartners" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">Michigan Sea Grant Partnerships</h5>
+                <div class="modal-header custom-modal-header">
+                    <h5 class="modal-title fw-bold">Michigan Sea Grant Partnerships</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
                     <p class="lead mb-4">Geospatial tracking of organizational, academic, and government collaborations across the Great Lakes.</p>
                     
-                    <!-- Embedded ArcGIS Dashboard -->
                     <div class="ratio ratio-16x9 mb-5 rounded shadow-sm border">
                         <iframe src="https://www.arcgis.com/apps/dashboards/c9953a7b5a5b40ba8af874eb32e3b79e" frameborder="0" allowfullscreen></iframe>
                     </div>
@@ -639,11 +658,11 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <img src="./assets/PartnerMap_Points_Final.jpg" class="img-fluid rounded shadow-sm border" alt="Partner Map 1">
-                            <h6 class="mt-2 fw-bold text-primary">Partner Map v1</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Partner Map v1</h6>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/PartnerMap_Points_Final_2.jpg" class="img-fluid rounded shadow-sm border" alt="Partner Map 2">
-                            <h6 class="mt-2 fw-bold text-primary">Partner Map v2</h6>
+                            <h6 class="mt-3 fw-bold text-theme-primary">Partner Map v2</h6>
                         </div>
                     </div>
                 </div>
