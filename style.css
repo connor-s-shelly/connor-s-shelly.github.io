@@ -42,12 +42,20 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     position: relative;
     padding-bottom: 80px !important;
 }
+
+/* Fixed Headshot Image */
 .hero-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid white;
     transition: transform 0.3s ease;
 }
+
 .hero-img:hover {
     transform: scale(1.05);
 }
+
 .custom-btn {
     color: var(--primary-color);
     font-weight: 600;
